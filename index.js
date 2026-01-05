@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
   const course = process.env.COURSE || "Unknown Course";
-  res.send("Hello from ${course}!");
+  res.send('Hello from ${course}!');
 });
 
 app.listen(PORT, () => {
